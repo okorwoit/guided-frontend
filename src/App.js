@@ -1,27 +1,30 @@
-// App.js
+import React, { useState } from "react";
+import "./styles.css";
 
-import React, { useState } from 'react';
-import './styles.css'; // Import your CSS file
+import Header from "./components /Header";
+import Sidebar from "./components /Sidebar";
+import Main from "./components /Main";
 
-import Header from './components /Header';
-import Sidebar from './components /Sidebar';
 
 function App() {
-  const [activeCategory, setActiveCategory] = useState('Dashboard');
+  const [activeCategory, setActiveCategory] = useState("Dashboard");
 
   const handleCategoryClick = (category) => {
     setActiveCategory(category);
   };
 
   return (
-    <div className="app">
-      <div className="content">
-        <Header activeCategory={activeCategory} />
-        {/* Other components and content */}
+      <div className="app">
+        <div className="content">
+          <Header activeCategory={activeCategory} />
+          <Main />
+          {/* Other components and content */}
+        </div>
+        <Sidebar
+          activeCategory={activeCategory}
+          onCategoryClick={handleCategoryClick}
+        />
       </div>
-      <Sidebar activeCategory={activeCategory} onCategoryClick={handleCategoryClick} />
-
-    </div>
   );
 }
 

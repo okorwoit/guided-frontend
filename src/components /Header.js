@@ -1,17 +1,16 @@
 // Header.js
 
-import React from 'react';
-import '../styles.css';
-
 function Header({ activeCategory }) {
+    
+
   return (
     <div className="header">
       <div className="header-left">
         <div className="active-category">{activeCategory}</div>
       </div>
-      <div className="header-center">
+      {/* <div className="header-center">
         <input type="text" placeholder="Search" />
-      </div>
+      </div> */}
       <div className="header-right">
         <div className="profile">User Profile</div>
       </div>

@@ -1,7 +1,5 @@
-// Sidebar.js
 
 import React from 'react';
-import '../styles.css';
 
 
 function Sidebar({ activeCategory, onCategoryClick }) {
@@ -42,6 +40,7 @@ function Sidebar({ activeCategory, onCategoryClick }) {
             </button>
           ))}
         </div>
+
       </div>
     );
   }

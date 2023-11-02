@@ -58,7 +58,7 @@ body {
     width: 100%;
     text-decoration: none;
     margin: 5px;
-    font-size: 19px;
+    font-size: 18px;
     flex-grow: 1;
     cursor: pointer;
     padding: 10px;
@@ -91,7 +91,7 @@ body {
   .header {
     background-color: #34495e; /* Ustrive-inspired color */
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 20px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -128,4 +128,76 @@ body {
     cursor: pointer;
   }
   
+  /* MentoringOpportunityForm css */
+
+.mentoring-opportunity-form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 30px; /* Add horizontal padding */
+  box-sizing: border-box;
+}
+
+.welcome {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #34495e;
   
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dashboard-card {
+  flex: 0 0 calc(50% - 4%);
+  margin: 0 2% 4% 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
