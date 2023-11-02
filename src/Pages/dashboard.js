@@ -19,6 +19,7 @@ const Dashboard = () => {
   const handleClose = () => {
     setOpen(false);
     // update the opportunities page here
+    navigate('/opportunities');
   };
 
   const cardInfo = [
@@ -49,7 +50,7 @@ const Dashboard = () => {
       </div>
       <Dialog open={open} onClose={handleClose}>
         <MentoringOpportunityForm />
-        <Button type="submit" className="submit-button" onClick={handleClose}>Save</Button>
+        <Button  onClick={handleClose}>Save</Button>
       </Dialog>
     </div>
   );
